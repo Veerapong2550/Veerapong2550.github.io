@@ -1,0 +1,121 @@
+/* ============================================================
+   Sweet Gypsy Design — Base / Reset / Shared Styles
+   ============================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--body-font), sans-serif;
+}
+
+body {
+  font-family: var(--body-font), sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* ─── SECTION SHARED ─── */
+section {
+  padding: 7rem 6rem;
+}
+
+.section-tag {
+  font-size: .68rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: var(--heading-font), serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--brown);
+  line-height: 1.2;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+/* ─── BUTTONS ─── */
+.btn-primary {
+  background: var(--brown);
+  color: var(--cream);
+  padding: .9rem 2.2rem;
+  text-decoration: none;
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background .2s, transform .2s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: var(--gold);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  color: var(--brown-light);
+  text-decoration: none;
+  font-size: .78rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  transition: color .2s, gap .2s;
+}
+
+.btn-secondary:hover {
+  color: var(--gold);
+  gap: .75rem;
+}
+
+.btn-secondary::after {
+  content: '→';
+}
+
+/* ─── PLACEHOLDER IMG (gradient) ─── */
+.img-ph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--heading-font), serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(107, 76, 59, .5);
+}
+
+.ph-1 {
+  background: linear-gradient(135deg, #E8D5C0 0%, #D4B896 100%);
+}
+
+.ph-2 {
+  background: linear-gradient(135deg, #DEC9B0 0%, #C9A87A 100%);
+}
+
+.ph-3 {
+  background: linear-gradient(135deg, #E5D5BC 0%, #CCAA80 100%);
+}
+
+.ph-4 {
+  background: linear-gradient(135deg, #D8C4A8 0%, #C4A070 100%);
+}
+
+.ph-5 {
+  background: linear-gradient(135deg, #EAD8C4 0%, #D0AD80 100%);
+}

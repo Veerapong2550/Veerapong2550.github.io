@@ -1,0 +1,382 @@
+/* ============================================================
+   Sweet Gypsy Design — Responsive Breakpoints
+   ============================================================ */
+
+/* ============================================================
+   RESPONSIVE — Tablet (≤ 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+  section {
+    padding: 5rem 3rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-left {
+    padding: 4rem 2.5rem 4rem 3rem;
+  }
+
+  .collections-columns {
+    display: block;
+  }
+
+  .collection-column-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .inspi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .story {
+    gap: 3rem;
+  }
+
+  .contact {
+    gap: 3rem;
+  }
+
+  .line-cta {
+    padding: 2.5rem 3rem;
+  }
+
+  .footer-bar {
+    padding: 1.2rem 3rem;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — Mobile (≤ 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* NAV */
+  nav {
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    /* allow wrapping if absolutely necessary */
+  }
+
+  .nav-logo {
+    order: 1;
+    flex: 1;
+  }
+
+  .nav-hamburger {
+    display: flex;
+    order: 3;
+    margin-left: 1rem;
+  }
+
+  .nav-right {
+    order: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background: rgba(250, 246, 240, 0.98);
+    backdrop-filter: blur(16px);
+    padding: 6rem 2rem 2rem;
+    gap: 1.8rem;
+    transform: translateX(100%);
+    transition: transform .35s ease;
+    z-index: 100;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    letter-spacing: .15em;
+  }
+
+  .lang-switcher {
+    margin-right: 0;
+  }
+
+  /* Hide extra nav-cta on mobile because we have floating buttons */
+  .nav-cta {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-left {
+    padding: 3rem 1.5rem 2.5rem;
+    order: 2;
+  }
+
+  .hero-right {
+    min-height: 50vh;
+    order: 1;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .hero-sub {
+    max-width: 100%;
+  }
+
+  .hero-stats {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-badge {
+    left: 1rem;
+    bottom: 1.5rem;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .collections-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .collections-columns {
+    display: block;
+  }
+
+  .collection-column-items {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .inspi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  /* STORY */
+  .story {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* LINE CTA */
+  .line-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    align-items: center;
+  }
+
+  .line-cta-text {
+    font-size: 1.3rem;
+  }
+
+  /* CONTACT */
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-form-title {
+    font-size: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer-bar {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+  }
+
+  /* FLOATING BUTTONS */
+  .float-group {
+    bottom: 1.2rem;
+    right: 1.2rem;
+  }
+
+  .float-btn {
+    width: 46px;
+    height: 46px;
+  }
+
+  .float-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .float-btn .float-tooltip {
+    display: none;
+  }
+
+  /* MODAL */
+  .product-modal {
+    max-width: 95vw;
+  }
+
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-img-side {
+    border-radius: 4px 4px 0 0;
+  }
+
+  .modal-img-wrapper {
+    min-height: 280px;
+    max-height: 350px;
+  }
+
+  .modal-info-side {
+    padding: 1.8rem 1.5rem 1.5rem;
+  }
+
+  .modal-product-name {
+    font-size: 1.5rem;
+  }
+
+  .modal-product-price {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — Small Mobile (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  nav {
+    padding: .8rem 1rem;
+  }
+
+  .nav-logo {
+    font-size: 1.25rem;
+  }
+
+  .lang-switcher {
+    gap: 2px;
+    padding: 2px;
+  }
+
+  .lang-btn {
+    font-size: .6rem;
+    padding: .25rem .45rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .hero-left {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+  }
+
+  .stat-num {
+    font-size: 1.5rem;
+  }
+
+  .collections-columns {
+    display: block;
+  }
+
+  .collection-column-items {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .line-cta {
+    padding: 1.5rem 1rem;
+  }
+
+  .line-cta-text {
+    font-size: 1.1rem;
+  }
+
+  .contact-form-title {
+    font-size: 1.6rem;
+  }
+
+  .footer-bar {
+    font-size: .65rem;
+    padding: .8rem 1rem;
+  }
+
+  /* MODAL */
+  .modal-img-wrapper {
+    min-height: 220px;
+    max-height: 280px;
+  }
+
+  .modal-info-side {
+    padding: 1.5rem 1.2rem 1.2rem;
+  }
+
+  .modal-product-name {
+    font-size: 1.3rem;
+  }
+
+  .modal-product-price {
+    font-size: 1.15rem;
+  }
+
+  .modal-order-btn {
+    font-size: .72rem;
+    padding: .75rem 1rem;
+  }
+}

@@ -1,0 +1,38 @@
+/* ============================================================
+   Sweet Gypsy Design — Variables & Custom Properties
+   CSS Design Tokens: colors, typography, font imports
+   ============================================================ */
+
+:root {
+  --cream: #FAF6F0;
+  --cream-dark: #F0E8DC;
+  --gold: #C9A96E;
+  --gold-dark: #8B6914;
+  --brown: #3D2B1F;
+  --brown-light: #6B4C3B;
+  --text: #2C1E14;
+  --text-muted: #7A5C4A;
+  --white: #FFFDF9;
+  --body-font: 'Jost', sans-serif;
+  --heading-font: 'Cormorant Garamond', serif;
+}
+
+html.lang-en {
+  --body-font: 'Jost', sans-serif;
+  --heading-font: 'Shippori Mincho', serif;
+}
+
+html.lang-th {
+  --body-font: 'Prompt', sans-serif;
+  --heading-font: 'Chonburi', serif;
+}
+
+html.lang-zh {
+  --body-font: 'Noto Sans TC', sans-serif;
+  --heading-font: 'Noto Serif TC', serif;
+}
+
+html.lang-ja {
+  --body-font: 'Noto Sans JP', sans-serif;
+  --heading-font: 'Shippori Mincho', serif;
+}
